@@ -11,13 +11,13 @@ const ProgressBar: React.FC<ProgressBarProps> = ({
 
   return (
     <div className="my-4">
-      <div className="w-full bg-gray-200 rounded-full h-4">
+      <div className="w-full bg-gray-700 rounded-full h-4">
         <div
           className="bg-green-500 h-4 rounded-full"
           style={{ width: `${progress}%` }}
         />
       </div>
-      <p className="text-center mt-2">
+      <p className="text-center mt-2 text-gray-300">
         {completedTasks} de {totalTasks} tarefas concluídas
       </p>
     </div>

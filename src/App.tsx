@@ -31,8 +31,13 @@ const App: React.FC = () => {
   const completedTasks = tasks.filter((task) => task.completed).length;
 
   return (
-    <div className="max-w-md mx-auto mt-10">
-      <h1 className="text-2xl font-bold text-center">Lista de Tarefas</h1>
+    <div className="max-w-[768px] mx-auto mt-10 bg-gray-900 p-6 rounded-lg shadow-lg text-white">
+      <div className="flex flex-col items-center justify-center gap-2">
+        <img src="/logo.svg" alt="Logo ToDo" className="w-24 h-24" />
+        <h1 className="text-3xl font-bold text-center text-white">
+          Lista de Tarefas
+        </h1>
+      </div>
       <TaskInput addTask={addTask} />
       <ProgressBar totalTasks={tasks.length} completedTasks={completedTasks} />
       <TaskList

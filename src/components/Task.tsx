@@ -12,7 +12,7 @@ export interface TaskType {
 
 const Task: React.FC<TaskProps> = ({ task, toggleComplete, removeTask }) => {
   return (
-    <div className="flex items-center justify-between bg-gray-100 p-2 my-2 rounded">
+    <div className="flex items-center justify-between bg-gray-800 p-4 my-2 rounded text-white">
       <div className="flex items-center">
         <input
           type="checkbox"
@@ -26,7 +26,7 @@ const Task: React.FC<TaskProps> = ({ task, toggleComplete, removeTask }) => {
       </div>
       <button
         onClick={() => removeTask(task.id)}
-        className="text-red-500 hover:text-red-700"
+        className="text-red-400 hover:text-red-600"
       >
         Remover
       </button>
